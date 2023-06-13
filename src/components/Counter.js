@@ -1,6 +1,7 @@
 import React ,{useState} from "react";
 import { useDispatch,  useSelector } from "react-redux"
 
+
 const Counter = () => {
     const count = useSelector(state=>state.count)
     const [randomNum,setRandomNum] = useState("")
@@ -9,14 +10,11 @@ const Counter = () => {
         dispatch({
             type:"DECREMENT",
             payload:Number(randomNum)
-         })
-
-        
+         })  
     }
     const handleReset = () =>{
         dispatch({
-            type:"RESET"
-           
+            type:"RESET"   
          })
     }
     const handleIncrement = () =>{
