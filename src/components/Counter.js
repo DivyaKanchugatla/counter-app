@@ -29,7 +29,7 @@ const Counter = () => {
             <h1>Counter Application</h1>
             <label>
             Number to Add :     
-            <input type="number" value={randomNum} onChange={(e)=>setRandomNum(e.target.value)} placeholder="Enter any number" style={{margin:"10px"}} />
+            <input type="number" value={randomNum} onChange={(e)=>setRandomNum(e.target.value)} placeholder="Enter any number" style={{margin:"10px"}}  />
             </label>
             <p><span>Count </span>: {count}</p>
             <div className="buttons-container">
